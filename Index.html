@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2e1a47;
+            color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #4a2c6f;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.02);
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background: #6a359c;
+            color: white;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            transition: background 0.3s;
+        }
+        header:hover {
+            background: #8a50c7;
+        }
+        header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #b57edc;
+            transition: all 0.5s ease-in-out;
+            margin-right: 20px;
+        }
+        header img:hover {
+            width: 150px;
+            height: 150px;
+            border-radius: 0;
+            transform: scale(1.1);
+        }
+        h1, h2 {
+            color: #e0c3fc;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #5a3d79;
+            border-left: 5px solid #b57edc;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .section:hover {
+            background: #7b4da1;
+            transform: translateX(5px);
+        }
+        .about {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .about div {
+            flex: 1;
+            min-width: 50%;
+        }
+        .typing-text {
+            font-size: 1.2em;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid #b57edc;
+            width: 0;
+            animation: typing 3s steps(40, end) forwards, blink 0.8s infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+        .skills, .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .skills-container, .projects-section {
+            text-align: left;
+        }
+        .skills div, .projects div {
+            background: #d3d3d3;
+            color: #000;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, background 0.3s;
+        }
+        .skills div:hover, .projects div:hover {
+            transform: scale(1.1);
+            background: #b57edc;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="/V.premkumar.jpg" alt="Profile Picture">
+            <div>
+                <h1>PremKumar Vedhaiyan</h1>
+                <p>Web Developer | HTML, CSS, JavaScript</p>
+            </div>
+        </header>
+        
+        <section class="section about">
+            <div>
+                <h2>About Me</h2>
+                <p class="typing-text">A passionate web developer with experience in building responsive and interactive websites.</p>
+            </div>
+        </section>
+        
+        <section class="section skills-container">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JavaScript</div>
+                <div>React</div>
+                <div>C++</div>
+                <div>PHP</div>
+                <div>Responsive Design</div>
+                <div>Karate</div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Experience</h2>
+            <p><strong>Web Developer</strong> - XYZ Company (2021 - Present)</p>
+            <ul>
+                <li>Developed interactive websites and web applications.</li>
+                <li>Worked on front-end and back-end development.</li>
+                <li>Optimized performance and user experience.</li>
+            </ul>
+        </section>
+        
+        <section class="section projects-section">
+            <h2>Projects</h2>
+            <div class="skills">
+                <div>Portfolio Website</div>
+                <div>E-commerce Website</div>
+                <div>Blog Platform</div>
+            </div>
+        </section>
+        
+        <section class="section contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:premvedhaiyan@gmail.com">premvedhaiyan@gmail.com</a></p>
+            <p>Phone: <a href="https://instagram.com" target="_blank">+91 9159118456</a></p>
+            <p>GitHub: <a href="https://github.com" target="_blank">github.com</a></p>
+        </section>
+    </div>
+</body>
+</html>
